@@ -168,7 +168,7 @@
     }
 }
 
-:host:not(._old-edge) {
+:host {
     appearance: none;
     height: @track-height;
     padding: ((@hitbox - @track-height) / 2) 0; /* To catch click events nearby THIN input's track */
@@ -234,22 +234,5 @@
         background: @thumb-color;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-    }
-}
-
-/* Not-chromium Edge minimum customization */
-:host._old-edge {
-    &::-ms-thumb {
-        background: @thumb-color;
-        border-radius: 50%;
-    }
-
-    &::-ms-fill-lower {
-        background: @thumb-color;
-    }
-
-    &::-ms-track {
-        background: @track-color;
-        border: none;
     }
 }
