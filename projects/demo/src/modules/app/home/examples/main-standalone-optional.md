@@ -5,8 +5,13 @@ import {TuiRootModule, TuiDialogModule, TuiAlertModule, TuiPushModule} from '@ta
 bootstrapApplication(AppComponent, {
   providers: [
     provideAnimations(),
-    provideRouter(routes),
-    provideClientHydration(),
+    provideRouter([
+      {
+        path: '',
+        pathMatch: 'full',
+        loadComponent: async () => import('./home/home.component'),
+      },
+    ]),
     importProvidersFrom(
       TuiRootModule,
       TuiDialogModule,
