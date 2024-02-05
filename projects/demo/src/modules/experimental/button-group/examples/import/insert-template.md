@@ -1,0 +1,24 @@
+```html
+<div
+  tuiButtonGroup
+  tuiSurface="elevated"
+>
+  <button
+    appearance="link"
+    iconLeft="tuiIconPlusCircleLarge"
+    tuiButton
+    tuiButtonVertical
+  >
+    Pay
+  </button>
+
+  <button
+    appearance="link"
+    iconLeft="tuiIconPlusCircleLarge"
+    tuiButton
+    tuiButtonVertical
+  >
+    Cancel
+  </button>
+</div>
+```

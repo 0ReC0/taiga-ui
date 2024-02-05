@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+[tuiSurface][data-surface='custom'],
+.shadow {
+    background: linear-gradient(334.83deg, #7d8ca0 0%, #647382 100%);
+
+    [tuiButton] {
+        color: rgba(255, 255, 255, 0.8);
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+.shadow {
+    box-shadow: var(--tui-shadow);
+    border-radius: 1rem;
+
+    [tuiButton] {
+        font-size: 0.8125rem;
+        width: 100%;
+    }
+}
